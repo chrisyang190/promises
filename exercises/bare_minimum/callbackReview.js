@@ -24,7 +24,7 @@ var getStatusCode = function (url, cb) {
     if (err) {
       cb(err, statusCode);
     } else {
-      cb(200);
+      cb(err, 200);
     }
   });
 };
